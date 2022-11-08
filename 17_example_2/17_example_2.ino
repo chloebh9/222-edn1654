@@ -51,9 +51,9 @@ void loop()
   // we need distance range filter here !!!
   if (dist < 50.0 || dist > 300.0) return;
   if (dist >= 100.0 && dist <= 250.0) {
-    digitalWrite(PIN_LED, 1);
-  } else {
     digitalWrite(PIN_LED, 0);
+  } else {
+    digitalWrite(PIN_LED, 1);
     if(dist < 100.0) {
       dist = 100.0;
     } else {
